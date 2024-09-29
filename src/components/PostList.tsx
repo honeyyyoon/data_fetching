@@ -1,3 +1,5 @@
+import './PostList.css';
+
 import React from 'react';
 
 import type { Post } from '../App';
@@ -24,7 +26,7 @@ export const PostList: React.FC<PostListProps> = ({
             }}
             className={post.id === selectedId ? 'selected' : ''}
           >
-            {post.title}
+            {post.id}. {post.title}
           </li>
         ))}
       </ul>

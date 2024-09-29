@@ -1,3 +1,5 @@
+import './PostDetail.css';
+
 import React from 'react';
 
 import type { Comment } from '../App';

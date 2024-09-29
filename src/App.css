@@ -1,0 +1,32 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  border: 1px solid red;
+  height: calc(100vh - 100px);
+}
+
+.left-section {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.right-section {
+  flex: 1;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-section {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+}

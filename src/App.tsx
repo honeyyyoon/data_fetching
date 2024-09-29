@@ -1,4 +1,5 @@
 import './reset.css';
+import './App.css';
 
 import React, { useEffect, useState } from 'react';
 
@@ -92,14 +93,14 @@ export const App: React.FC = () => {
   return (
     <div className="app">
       <h1>포스트 목록</h1>
-      <div className="content">
+      <div className="left-section">
         <PostList
           posts={posts}
           selectedId={selectedId}
           onSelectPost={handleSelectID}
         />
       </div>
-      <div className="body">
+      <div className="right-section">
         {
           <PostDetail
             body={postDetail === undefined ? undefined : postDetail.body}
