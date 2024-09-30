@@ -92,7 +92,6 @@ export const App: React.FC = () => {
 
   return (
     <div className="app">
-      <h1>포스트 목록</h1>
       <div className="left-section">
         <PostList
           posts={posts}

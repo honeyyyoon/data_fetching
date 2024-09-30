@@ -17,6 +17,7 @@ export const PostList: React.FC<PostListProps> = ({
 }) => {
   return (
     <div className="post-list">
+      <h1>포스트 목록</h1>
       <ul>
         {posts.map((post) => (
           <li
